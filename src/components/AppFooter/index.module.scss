@@ -1,0 +1,99 @@
+.app-footer {
+       
+  padding-bottom: 132px;
+  @include md{
+    padding: 88px;
+  }
+  :global {
+      .con-main-wrap {
+        @include flex-row;
+        align-items: flex-start;
+        gap: 202px;
+        @include md{
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 0;
+        }
+        .left-logo-wrap {
+          @include md{
+            width: 100%;
+            @include flex-col;
+          }
+
+          h3 {
+            position: relative;
+            font-size: 37px;
+            font-weight: 600;
+            color: var(--font-color-h1);
+            letter-spacing: 6.714px;
+            @include md{
+              font-size: 30px;
+            }
+            .logo{
+              position: absolute;
+              top: -15px;
+              left: 37px;
+              @include md{
+                left: 28px;
+              }
+            }
+          }
+       
+          span {
+            color: rgba(255, 255, 255, 0.40);
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: -0.08px;
+            @include md{
+              margin-top: 19px;
+            }
+          }
+
+          .bottom-logo {
+            margin-top: 34px;
+            margin-bottom:59px ;
+            img {
+              margin-right: 12px;
+            }
+          }
+
+        }
+
+        .right-nav-wrap {
+          @include flex-row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 147px;
+          color: var(--font-color-h1);
+          @include md {
+            gap: 47px;
+            flex-direction: column;
+            align-items: center;
+          }
+          .nav-wrap{
+            @include md{
+              text-align: center ;
+            }
+            .title {
+              display: inline-block;
+              font-size: 16px;
+              font-weight: 700;
+              padding-bottom: 1px;
+              border-bottom: 1px solid #fff;
+            }
+            .nav-list {
+              @include flex-col;
+              align-items: flex-start;
+              gap: 21px;
+              margin-top: 21px;
+              font-weight: 400;
+              @include md{
+                align-items: center;
+              }        
+              }
+          }
+          }
+      }
+    }
+  }

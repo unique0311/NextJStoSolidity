@@ -1,0 +1,508 @@
+.home-wrap {
+  color: var(--font-color-h1);
+  padding-bottom: 112px;
+  @include md {
+    padding-bottom: 102px;
+  }
+
+  :global {
+    .home-token-table {
+      margin-bottom: -169px;
+
+      .header-bg {
+        background: url("/img/home/tokenTable/top-bg.png");
+        width: 100%;
+        height: 252.639px;
+        background-size: 100% 100%;
+        @include md {
+          height: 128px;
+        }
+      }
+
+      .cen-wrap {
+        width: 1228px;
+        position: relative;
+        top: -169px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include md {
+          top: -149px;
+          width: 100%;
+          padding: 0 35px;
+        }
+        .token-table {
+          margin: 0 auto;
+          width: 808px;
+          padding: 52px 50px 52px 66px;
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          background: linear-gradient(180deg, #113844 0%, #000101 77.08%);
+          box-shadow: -100px 88px 159px 0px rgba(17, 138, 178, 0.25);
+          @include md {
+            width: 100%;
+            padding: 34px 9px;
+          }
+          .table-title-wrap {
+            @include flex-row;
+            justify-content: space-between;
+            @include md {
+              @include flex-col;
+              gap: 29px;
+            }
+            .left-wrap {
+              @include flex-row;
+              @include md {
+                gap: 7px;
+              }
+              p {
+                font-size: 32px;
+                font-weight: 500;
+                margin: 0 22px 0 10px;
+                letter-spacing: -0.5px;
+                @include md {
+                  font-size: 20px;
+                  margin: 0;
+                }
+              }
+            }
+
+            .timer-wrap {
+              @include flex-row;
+              width: 319px;
+              font-size: 34px;
+              padding: 13px 20px;
+              border-radius: 15px;
+              background: rgba(255, 255, 255, 0.1);
+              @include md {
+                width: 225px;
+                font-size: 20px;
+                padding: 7px 0;
+              }
+            }
+          }
+
+          .table-list {
+            padding-right: 14px;
+            @include md {
+              padding-right: 0;
+            }
+
+            .table-header {
+              margin-top: 44px;
+              padding-bottom: 24px;
+              border-radius: 0;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+              @include md {
+                margin: 37px 0 0;
+                padding: 9px 10px;
+                background: rgba(255, 255, 255, 0.05);
+                border: 0;
+              }
+              .header-item .title {
+                font-size: 26px;
+                font-weight: 400;
+                @include md {
+                  font-size: 12px;
+                }
+              }
+            }
+
+            .list-row-wrap {
+              &:nth-child(1) {
+                margin-top: 12px;
+              }
+
+              .list-row {
+                font-size: 26px;
+                @include md {
+                  font-size: 12px;
+                  padding: 15px 10px;
+                }
+
+                &:nth-child(1) {
+                  .list-column:nth-child(1) {
+                    span {
+                      font-weight: 500;
+                    }
+                  }
+                }
+              }
+            }
+
+            .list-row-wrap:nth-child(1) {
+              .list-row {
+                color: var(--font-color-p3);
+              }
+            }
+
+            .list-row-wrap:nth-child(2) {
+              .list-row {
+                color: #3e8fff;
+              }
+            }
+
+            .list-row-wrap:nth-child(3) {
+              .list-row {
+                color: #a46dff;
+              }
+            }
+          }
+
+          .btn {
+            cursor: pointer;
+            margin-top: 30px;
+            @include flex-row;
+            padding: 22px 0;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 13.31px;
+            border: 1.331px solid rgba(47, 190, 222, 0.3);
+            background: linear-gradient(180deg, #3a89a3 0%, #0a303d 100%);
+            @include md {
+              margin-top: 19px;
+              padding: 8px 0;
+              margin: 19px 4px 0;
+              font-size: 11px;
+            }
+          }
+        }
+
+        .position-wrap {
+          @include md {
+            display: none;
+          }
+          img {
+            position: absolute;
+
+            &:nth-child(1) {
+              top: 191px;
+              left: 40px;
+            }
+
+            &:nth-child(2) {
+              top: 381px;
+              left: 17px;
+            }
+
+            &:nth-child(3) {
+              top: 511px;
+              left: 54px;
+            }
+
+            &:nth-child(4) {
+              top: 210px;
+              right: 101px;
+            }
+
+            &:nth-child(5) {
+              top: 334px;
+              right: -35px;
+            }
+
+            &:nth-child(6) {
+              top: 536px;
+              right: 60px;
+            }
+          }
+        }
+      }
+    }
+
+    .home-deposit {
+      margin-top: 79px;
+      @include flex-col;
+      @include md {
+        margin-top: 62px;
+      }
+
+      .title {
+        @include flex-row;
+        gap: 10px;
+        font-size: 40px;
+        font-weight: 500;
+        @include md {
+          font-size: 22px;
+        }
+        p {
+          color: var(--font-color-p3);
+        }
+      }
+      .hr {
+        margin: 31px auto 0;
+        width: 334px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.4);
+        @include md {
+          margin-top: 20px;
+          width: 200px;
+        }
+      }
+
+      .card-list {
+        width: 1090px;
+        margin-top: 79px;
+        @include flex-row;
+        gap: 39px;
+        flex-wrap: wrap;
+        @include md {
+          width: 100%;
+          padding: 0 28px;
+          gap: 17px;
+          margin-top: 43px;
+        }
+
+        .card-item {
+          padding: 32px 29px 23px 32px;
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+          font-size: 15px;
+          @include md {
+            padding: 28px 35px 42px 20px;
+            font-size: 12px;
+          }
+
+          .top-wrap {
+            @include flex-row;
+            justify-content: space-between;
+
+            .left-wrap {
+              @include flex-row;
+              gap: 7px;
+              img {
+                @include md {
+                  width: 21px;
+                }
+              }
+              p {
+                font-size: 18px;
+                color: var(--font-color-p3);
+                @include md {
+                  font-size: 14px;
+                }
+              }
+            }
+
+            .right-wrap {
+              @include flex-row;
+              padding: 3px 16px;
+              gap: 9px;
+              border-radius: 5px;
+              background: rgba(255, 255, 255, 0.1);
+              @include md {
+                gap: 7px;
+                padding: 3px 11px;
+              }
+
+              span {
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: var(--font-color-p3);
+                @include md {
+                  width: 6px;
+                  height: 6px;
+                }
+                &.err{
+                  background: #7b7b7b;
+                }
+              }
+
+              p {
+                font-weight: 600;
+              }
+            }
+          }
+
+          .cen-wrap {
+            @include flex-row;
+            justify-content: space-between;
+            align-items: flex-end;
+            @include md {
+              margin-top: 8px;
+            }
+
+            .left-wrap {
+              @include flex-row;
+              align-items: flex-end;
+              gap: 10px;
+
+              h3 {
+                font-size: 38px;
+                @include md {
+                  font-size: 28px;
+                }
+              }
+
+              span {
+                color: var(--font-color-p3);
+                margin-bottom: 5px;
+                @include md {
+                  font-size: 15px;
+                }
+              }
+            }
+
+            .right-wrap {
+              font-size: 23px;
+              @include md {
+                font-size: 18px;
+              }
+            }
+          }
+
+          .bottom-wrap {
+            margin-top: 21px;
+            @include flex-row;
+            gap: 22px;
+            justify-content: space-between;
+            @include md {
+              @include flex-col;
+              margin-top: 37px;
+            }
+
+            .left-wrap {
+              padding: 10px 0;
+              text-align: center;
+              font-weight: 600;
+              width: 287px;
+              border-radius: 10px;
+              background: linear-gradient(180deg, #01e186 0%, #01482b 100%);
+              &.err{
+                color: var(--font-color-p3);
+                border: 1px solid rgba(1, 225, 134, 0.3);
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+              }
+              @include md {
+                width: 287px;
+              }
+            }
+
+            .right-wrap {
+              width: 151px;
+              @include flex-row;
+              color: var(--font-color-p4);
+              height: 38px;
+              font-weight: 600;
+              border-radius: 10px;
+              border: 1px solid rgba(255, 62, 62, 0.3);
+              background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+              @include md {
+                width: 287px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .home-recent-windfalls {
+      margin-top: 151px;
+      @include md {
+        margin-top: 95px;
+        padding: 0 13px;
+      }
+      .con-main-wrap {
+        padding: 72px 132px 50px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+        @include md {
+          border-radius: 29px;
+          padding: 41px 20px 38px;
+        }
+        h3 {
+          font-size: 40px;
+          text-align: center;
+          @include md{
+            font-size: 22px;
+          }
+        }
+        hr{
+          @include md{
+            display: none;
+          }
+        }
+
+        .table-list {
+          margin-top: 90px;
+
+          .table-header {
+            padding-bottom: 26px;
+            border-radius: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 30px;
+            font-size: 20px;
+            @include md{
+              font-size: 14px;
+            }
+          }
+          .column-windfall {
+            .element{
+              font-size: 20px;
+            @include flex-row;
+            gap: 5px;
+           @include md{
+            font-size: 12px;
+           }
+            .canto {
+              color:var(--font-color-p3);
+            }
+            .etgereum {
+              color: #3e8fff;
+            }
+            .matic{
+              color: #A46DFF;
+            }
+            .super{
+              color: #FBFF3E;
+            }
+            }
+          }
+          .column-date{
+            font-size: 20px;
+            @include md{
+              font-size: 12px;
+             }
+            .yellow{
+              color: #FBFF3E;
+            }
+          }
+
+            .column-amount{
+              font-size: 20px;
+              @include flex-row;
+              gap: 5px;
+              @include md{
+                font-size: 12px;
+               }
+              .canto{
+                color: var(--font-color-p3);
+              }
+              .eth{
+                color: #3e8fff;
+              }
+              .matic{
+                color: #A46DFF;
+              }
+              .yellow{
+                color: #FBFF3E;
+              }
+            }
+            .column-nft{
+              font-size: 20px;
+              @include md{
+                font-size: 12px;
+               }
+              .c-28,
+              .e-101,
+              .m-88{
+               color: #FBFF3E;
+              }
+            }
+        }
+      }
+    }
+  }
+}

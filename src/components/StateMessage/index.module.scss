@@ -1,0 +1,21 @@
+.state-message-wrap {
+  @include flex-col;
+  padding: 30px 0;
+  :global {
+    img {
+      width: 200px;
+      height: 200px;
+      @include xs {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    span {
+      font-size: 24px;
+      color: var(--font-color-p1);
+      @include xs {
+        font-size: 16px;
+      }
+    }
+  }
+}

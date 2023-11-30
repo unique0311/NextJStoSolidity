@@ -1,0 +1,27 @@
+.modal-content-wrap {
+  :global {
+    .ant-drawer-content {
+      background: transparent;
+      border-radius: 10px;
+    }
+    .ant-modal-content,
+    .ant-drawer-wrapper-body {
+      color: var(--font-color-h1);
+      padding: 50px 60px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background: linear-gradient(180deg, #113844 0%, #000101 100%);
+      box-shadow: 0px 40px 125px 0px rgba(0, 147, 196, 0.7), 0px -40px 125px 0px rgba(218, 77, 116, 0.7),
+        -40px 0px 125px 0px rgba(224, 189, 98, 0.7), 40px 0px 125px 0px rgba(6, 165, 124, 0.7);
+      @include md {
+        padding: 20px 16px;
+      }
+    }
+    .ant-drawer-header {
+      display: none;
+    }
+    .ant-drawer-wrapper-body {
+      border: none;
+    }
+  }
+}

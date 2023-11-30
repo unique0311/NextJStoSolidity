@@ -1,0 +1,21 @@
+@import "./reset.scss";
+
+body {
+  --primary-color: #48bdcd;
+  --font-color-h1: #fff;
+  --font-color-h2: #6f797a;
+  --font-color-p1: #bfc8ca;
+  --font-color-p2: rgba(0, 0, 0, 0.2);
+  --font-color-p3: #01e186;
+  --font-color-p4: #ff3e3e;
+  --font-color-reverse: #fff;
+  --color-blue: #2172e5;
+  --color-red: #f85149;
+  --color-yellow: #f3ba2f;
+  --color-green: #01e186;
+  --color-error: #d43b0b;
+
+  --bg: #000;
+
+  --bg-card: #f8fafa;
+}

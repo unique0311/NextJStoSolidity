@@ -1,0 +1,174 @@
+.table-list-component {
+  :global {
+    .table-header {
+      display: grid;
+      grid-template-columns: 30% 16% 16% 16% 16% 6%;
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--font-color-h1);
+      text-align: center;
+      padding: 19px 12px;
+      border-radius: 8px 8px;
+
+      @include xs {
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .anticon-exclamation-circle {
+        margin-left: 5px;
+        color: var(--font-color-p1);
+      }
+      .header-item {
+        @include flex-row;
+        &.left {
+          justify-content: flex-start;
+        }
+        &.right {
+          justify-content: flex-end;
+        }
+
+        &.sort {
+          cursor: pointer;
+        }
+        .title {
+          font-weight: 500;
+        }
+        .label {
+          margin-top: 3px;
+          color: var(--font-color-p1);
+        }
+        .anticon {
+          color: var(--font-color-h2);
+          &.anticon-info-circle {
+            margin-left: 3px;
+          }
+        }
+        .sort-wrap {
+          @include flex-col;
+          span {
+            position: relative;
+            top: 2px;
+            &:nth-child(2) {
+              top: -2px;
+            }
+            &.active {
+              color: var(--primary-color);
+            }
+          }
+          .anticon {
+            color: var(--font-color-p2);
+          }
+        }
+      }
+    }
+
+    .table-body {
+      .list-row-wrap {
+        &:nth-last-child(1) {
+          box-shadow: none;
+        }
+        .list-row {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 30% 16% 16% 16% 16% 6%;
+          font-size: 14px;
+          text-align: center;
+
+          color: var(--font-color-h1);
+
+          padding: 19px 12px;
+          border-radius: 12px;
+
+          &.open {
+            background: var(--bg-hover);
+            &.sweep {
+              background: rgba(72, 189, 205, 0.08);
+              &.owner {
+                background: var(--bg);
+              }
+            }
+          }
+
+          @include xs {
+            font-size: 12px;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+
+          &:hover {
+            background: var(--bg-hover);
+            border-radius: 12px;
+            cursor: pointer;
+          }
+
+          .anticon {
+            font-size: 14px;
+            font-weight: bold;
+            @include xs {
+              font-size: 12px;
+            }
+          }
+          .list-column {
+            @include flex-row;
+            &.left {
+              text-align: left;
+              justify-content: flex-start;
+            }
+            &.right {
+              text-align: right;
+              justify-content: flex-end;
+            }
+
+            &.list-loading {
+              margin: 0 10px;
+              background: var(--bg-page);
+            }
+          }
+          .action-wrap {
+            @include flex-row;
+            gap: 8px;
+            font-size: 14px;
+            @include xs {
+              @include flex-col;
+              font-size: 12px;
+            }
+            .primary-btn {
+              padding: 3px 10px;
+              background: rgba(0, 0, 0, 0.8);
+              border-radius: 20px;
+
+              color: var(--bg);
+              margin-right: 8px;
+              @include xs {
+                padding: 3px 5px;
+              }
+            }
+            .secondary-btn {
+              padding: 3px 10px;
+              background: var(--line-color-2);
+              border-radius: 20px;
+              color: rgba(0, 0, 0, 0.8);
+              @include xs {
+                padding: 3px 5px;
+              }
+            }
+            .more-icon {
+              @include flex-row;
+              width: 28px;
+              height: 28px;
+
+              border: 1px solid var(--line-color);
+              border-radius: 20px;
+              .anticon {
+                font-weight: bold;
+                font-size: 10px;
+                color: var(--font-color-h1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

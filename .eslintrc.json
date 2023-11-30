@@ -1,0 +1,15 @@
+{
+  "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    // disabled as with the static export Image does not make to much sense
+    // "prettier/prettier": "off",
+    "import/no-anonymous-default-export": 0,
+    // typescript type any
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@next/next/no-img-element": "off"
+  }
+}
